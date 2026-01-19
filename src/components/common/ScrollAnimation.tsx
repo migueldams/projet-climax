@@ -1,13 +1,4 @@
-import { delay, motion, type Variant, type Variants } from 'framer-motion'
-
-type ScrollAnimationProps = { 
-    children: React.ReactNode ;
-    delay:number;
-    duration: number;
-    direction: string;
-    className: string
-
-} 
+import {  motion, type Variants } from 'framer-motion'
 
 const ScrollAnimation = ({ children  }:{children: React.ReactNode}) => {
   const delay = 0
