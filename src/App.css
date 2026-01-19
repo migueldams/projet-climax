@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+.Carousel-container {
+  width: 100%;
+  animation: carousel 1s linear ;
+}
+
+@keyframes carousel {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
