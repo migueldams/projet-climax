@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import logo from '@/assets/logo.png'
 import { email, phone } from '@/constant/generalInfo'
 import { NavLink, socialLinks } from '@/constant'
@@ -11,7 +11,6 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 function Header() {
   const location = useLocation()
-  const navRef = useRef(null)
   const [isNav, setIsNav] = useState(false)
 
   useEffect(() => {
@@ -98,7 +97,7 @@ function Header() {
         <div className='w-1/3 h-full flex justify-center items-center bg-blue-950 text-white'>
           <div className='w-1/2 items-center hidden md:flex justify-around'>
             {socialLinks.map((link, i) => (
-              <button className='text-md font-semibold cursor-pointer' onClick={() => handelIconClick(link.label)}><link.icon size={20} /></button>
+              <button key={i} className='text-md font-semibold cursor-pointer' onClick={() => handelIconClick(link.label)}><link.icon size={20} /></button>
             ))}
           </div>
           <div className='flex justify-center md:hidden'>

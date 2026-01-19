@@ -94,7 +94,7 @@ function About() {
                     <div className='w-full xl:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8 text-white'>
                         {
                             serviceTabs.map((tab, i)=>(
-                                <div className='w-full h-80 space-y-4'>
+                                <div key={i} className='w-full h-80 space-y-4'>
                                     <img className='w-full h-50 object-cover' src={tab.image} alt="" />
                                     <p className='font-bold'>{tab.title}</p>
                                     <p>{tab.content}</p>

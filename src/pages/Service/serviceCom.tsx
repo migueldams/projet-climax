@@ -58,7 +58,7 @@ function serviceCom() {
                 <div className='w-full overflow-hidden flex  gap-20'>
                     <div ref={slideRef} className='flex h-100 items-end gap-15 transition-all duration-700'>
                         {[...recentWorks, ...recentWorks].map((work, i) => (
-                            <div className='w-100 h-80 relative'>
+                            <div key={i} className='w-100 h-80 relative'>
                                 <img src={work.image} className='w-full h-full' alt="" />
                                 <div className='h-60 w-60 top-20 bg-white left-50 shadow-2xl absolute z-20 p-10'>
                                     <div>

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import serviceImg from '@/assets/serviceImg.jpg'
 
 function Bannier() {
