@@ -1,7 +1,6 @@
-import { Contact, Facebook, HomeIcon, Instagram, Menu, ServerIcon, X } from "lucide-react";
+import { Contact, Facebook, HomeIcon, Instagram, ServerIcon } from "lucide-react";
 import { GiAutoRepair } from "react-icons/gi";
 import { FaWhatsapp } from "react-icons/fa";
-import { FcAbout } from "react-icons/fc";
 import { SiAboutdotme } from "react-icons/si";
 import ban1 from '@/assets/ban1.jpg'
 import ban2 from '@/assets/ban2.jpg'

@@ -1,5 +1,5 @@
 import { comment, recentWorks } from '@/constant'
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { MdAddCard } from 'react-icons/md'
 import globe from '@/assets/globe.jpg'
 import { MessageCircle } from 'lucide-react'
@@ -10,12 +10,10 @@ function Service() {
     const slideRef = useRef<HTMLDivElement | null>(null)
     const commentRef = useRef<HTMLDivElement | null>(null)
     const slidesRef = useRef<HTMLDivElement | null>(null)
-    const [isHidden , setIsHidden]= useState(false)
 
     let index = 0
     const [indexCom, setIndexCom] = useState(0);
     const totalSlides = 3;
-    const dotsRef = useRef<Array<HTMLDivElement | null>>([]);
 
     useEffect(() => {
         const slideInterval = setInterval(() => {
@@ -62,7 +60,7 @@ function Service() {
                 <div className='w-full overflow-hidden flex  gap-20'>
                     <div ref={slidesRef} className='flex h-100 items-end gap-15 transition-all duration-700'>
                         {[...recentWorks, ...recentWorks].map((work, i) => (
-                            <div className='w-95 h-80 relative'>
+                            <div key={i} className='w-95 h-80 relative'>
                                 <img src={work.image} className='w-full h-full' alt="" />
                                 <div className='h-60 w-60 top-20 bg-white left-30 md:left-50 shadow-2xl absolute z-20 p-10'>
                                     <div>

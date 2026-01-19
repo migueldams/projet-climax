@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import logo from '@/assets/logo.png'
 import { email, phone } from '@/constant/generalInfo'
 import { NavLink, socialLinks } from '@/constant'
@@ -8,8 +8,6 @@ import { redirectToFacebook } from '@/services/redirectToFacebook';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { p } from 'framer-motion/client';
-
 
 function Header() {
   const location = useLocation()

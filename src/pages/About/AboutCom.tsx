@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react'
+import  { useEffect, useRef, useState } from 'react'
 import { ArrowRight } from 'lucide-react'
-import { AboutI, comment, services, serviceTabs } from '@/constant'
+import { AboutI, comment} from '@/constant'
 import commercial from '@/assets/Commercial.jpeg'
 import { MdHomeRepairService } from 'react-icons/md'
 import globe from '@/assets/globe.jpg'
@@ -10,7 +10,6 @@ function AboutCom() {
     const useEbout = useRef(null)
     const [indexCom, setIndexCom] = useState(0);
     const totalSlides = 3;
-    const dotsRef = useRef<Array<HTMLDivElement | null>>([]);
     const slideRef = useRef<HTMLDivElement | null>(null)
     const commentRef = useRef<HTMLDivElement | null>(null)
 

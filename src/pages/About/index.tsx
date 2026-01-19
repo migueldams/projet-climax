@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Bannier from './Bannier'
 import AboutCom from './AboutCom'
 import ScrollAnimation from '@/components/common/ScrollAnimation'

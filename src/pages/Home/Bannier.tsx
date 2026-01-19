@@ -1,13 +1,11 @@
 
 import { bannier } from '@/constant'
 import { redirectToWhatsapp } from '@/services/redirectToWhatsapp';
-import { div } from 'framer-motion/client';
 import { useEffect, useState } from 'react'
 import { FaWhatsapp } from 'react-icons/fa';
 
 
 function Bannier() {
-    const [isScroll, setIsScroll] = useState<Boolean>(false)
     const [fondH, setFondH] = useState(0)
 
     useEffect(() => {
@@ -18,14 +16,6 @@ function Bannier() {
         return () => clearInterval(SlideIntervale);
     }, []);
 
-    useEffect(() => {
-
-        const SlideIntervale = setInterval(() => {
-            setIsScroll(true)
-        }, 8000)
-
-        return clearInterval(SlideIntervale)
-    })
 
     return (
         <div className='w-full h-screen overflow-hidden relative '>

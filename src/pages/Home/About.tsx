@@ -1,9 +1,8 @@
-import React from 'react'
+
 import { ArrowRight } from 'lucide-react'
 import { services, serviceTabs } from '@/constant'
 import ban1 from '@/assets/ban1.jpg'
 import ban2 from '@/assets/ban2.jpg'
-import { div } from 'framer-motion/client'
 
 function About() {
 

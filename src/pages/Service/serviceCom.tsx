@@ -1,6 +1,6 @@
 import { recentWorks, serviceTabs } from '@/constant'
-import { ArrowRight, MessageCircle } from 'lucide-react'
-import React, { useEffect, useRef } from 'react'
+import { MessageCircle } from 'lucide-react'
+import  { useEffect, useRef } from 'react'
 import { MdAddCard } from 'react-icons/md'
 
 function serviceCom() {

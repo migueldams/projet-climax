@@ -1,4 +1,4 @@
-import React from 'react'
+
 import logo from '@/assets/logo.png'
 import { NavLink, socialLinks } from '@/constant'
 import { redirectToWhatsapp } from '@/services/redirectToWhatsapp';

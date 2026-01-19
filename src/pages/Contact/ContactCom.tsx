@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 function ContactCom() {
     return (
@@ -12,7 +12,7 @@ function ContactCom() {
                     <p>Send us a message in case of any inquiry or
                         visit our site office anytime.</p>
                     <div className='w-full flex justify-col'>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3971.3890062484675!2d10.39412107584507!3d5.509129334117449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNcKwMzAnMzIuOSJOIDEwwrAyMyc0OC4xIkU!5e0!3m2!1sfr!2scm!4v1768645085779!5m2!1sfr!2scm" width="500" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3971.3890062484675!2d10.39412107584507!3d5.509129334117449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNcKwMzAnMzIuOSJOIDEwwrAyMyc0OC4xIkU!5e0!3m2!1sfr!2scm!4v1768645085779!5m2!1sfr!2scm" width="500" height="450"  loading="lazy" ></iframe>
                     </div>
                 </div>
                 <div className='w-full shadow-2xl h-200 p-10 '>

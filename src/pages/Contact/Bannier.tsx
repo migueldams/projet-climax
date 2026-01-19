@@ -1,4 +1,4 @@
-import React from 'react'
+
 import citizen from '@/assets/citizen.jpg'
 
 function Bannier() {
