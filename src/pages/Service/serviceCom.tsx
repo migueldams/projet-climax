@@ -1,6 +1,6 @@
 import { recentWorks, serviceTabs } from '@/constant'
 import { MessageCircle } from 'lucide-react'
-import  { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import { MdAddCard } from 'react-icons/md'
 
 function serviceCom() {
@@ -27,14 +27,16 @@ function serviceCom() {
             <div className='xl:w-2/3 gl:w-4/5 w-full space-y-20'>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
                     <div className='w-full space-y-4'>
-                        <p className='text-orange-400'>Erdunt Is The Industry Leaders</p>
-                        <div className='font-bold text-2xl'>Our Factory Produces
-                            Reliable, Efficient, Safe
-                            & Sustainable Products.
+                        <p className='text-orange-400'>Climax-Tech, leader en froid et climatisation</p>
+                        <div className='font-bold text-2xl'>
+                            Nous fournissons des solutions fiables, performantes,
+                            sécurisées et durables pour tous vos besoins en climatisation et froid industriel.
                         </div>
                     </div>
                     <div className='w-full space-y-4'>
-                        <p className='font-semibold '>Consectetur adipisicing elit sed eiusmod tempor incididunt labore dolore magna aliqua umt enim ad mini veniam quis trud exercitation sed ipsum dolor temps ullam laboris nisiut.</p>
+                        <p className='font-semibold'>
+                            Installation, maintenance et dépannage de systèmes de climatisation et de froid, adaptés aux particuliers, commerces et industries, avec un service rapide et professionnel.
+                        </p>
                     </div>
                 </div>
 
@@ -79,16 +81,17 @@ function serviceCom() {
             </div>
             <div className='xl:w-2/3 gl:w-4/5 w-full grid grid-cols-1 md:grid-cols-2 px-10 md:px-0 items-center gap-4 my-10 py-20 border-t-2 '>
                 <div className='w-full px-10 flex items-center gap-4'>
-                    < MessageCircle size={40} />
+                    <MessageCircle size={40} />
                     <div className=''>
-                        <p className='font-bold text-2xl'>Subscribe Newsletter</p>
-                        <p className='font-semibold'>At Erdunt, our goal is to generate production by experts</p>
+                        <p className='font-bold text-2xl'>Abonnez-vous à notre Newsletter</p>
+                        <p className='font-semibold'>Restez informé des dernières solutions et services en froid et climatisation proposés par Climax-Tech.</p>
                     </div>
                 </div>
                 <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-4'>
-                    <input className='w-full h-20 p-4 border-2' type="text" placeholder='Email Address...' />
-                    <button className='w-full h-20 p-4 bg-orange-400 '>contact Us</button>
+                    <input className='w-full h-20 p-4 border-2' type="text" placeholder='Votre adresse e-mail...' />
+                    <button className='w-full h-20 p-4 bg-orange-400 '>Nous contacter</button>
                 </div>
+
             </div>
         </div>
     )

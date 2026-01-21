@@ -45,24 +45,26 @@ function Service() {
             commentRef.current.style.transform = `translateX(-${indexCom * 33.4}%)`
         }
         // Gestion des indicateurs
-        
+
     }, [indexCom]);
 
     return (
         <div className=' flex flex-col items-center w-screen  mt-20'>
             <div className='xl:w-2/3 gl:w-4/5 w-full flex flex-col items-center space-y-20'>
                 <div className='w-2/3 md:w-1/2 text-center'>
-                    <p className='font-bold text-orange-400'>The Case Studies Of Erdunt</p>
-                    <p className='font-bold text-3xl'>Recent Factory Projects</p>
-                    <p className=''>Consectetur adipisicing elit sed eiusmod tempor incididunt labore dolore magna aliqua
-                        umt enim ad minim veniam quis trud exercitation ullam laboris nisiut</p>
+                    <p className='font-bold text-orange-400'>Nos réalisations Climax Tech SA</p>
+                    <p className='font-bold text-3xl'>Projets récents en froid et climatisation</p>
+                    <p className=''>
+                        Découvrez quelques-unes de nos installations et interventions récentes,
+                        réalisées avec expertise, fiabilité et respect des normes professionnelles.
+                    </p>
                 </div>
                 <div className='w-full overflow-hidden flex  gap-20'>
                     <div ref={slidesRef} className='flex h-100 items-end gap-15 transition-all duration-700'>
                         {[...recentWorks, ...recentWorks].map((work, i) => (
                             <div key={i} className='w-95 h-80 relative'>
                                 <img src={work.image} className='w-full h-full' alt="" />
-                                <div className='h-60 w-60 top-20 bg-white left-30 md:left-50 shadow-2xl absolute z-20 p-10'>
+                                <div className='h-60 w-60 top-20 bg-white left-30 md:left-50 shadow-2xs shadow-amber-600 absolute z-20 p-10'>
                                     <div>
                                         <p className='text-orange-400 font-semibold'>{work.categorie} </p>
                                         <p className='text-2xl font-bold'>{work.title} </p>
@@ -77,7 +79,7 @@ function Service() {
                             </div>
                         ))}
                     </div>
-                   
+
                 </div>
             </div>
             <div className='xl:w-2/3 gl:w-4/5 w-full flex flex-col items-center relative my-20 py-10'>
@@ -86,7 +88,7 @@ function Service() {
                 </div>
                 <div className='relative flex flex-col  w-full items-center z-20 space-y-20' >
                     <div className='w-full text-center'>
-                        <p className='font-bold text-orange-400'>What Erdunt Partners Saying</p>
+                        <p className='font-bold text-orange-400'>What climax tech Partners Saying</p>
                         <p className='font-bold text-4xl'>Read Client’s Reviews</p>
                     </div>
                     <div className='w-full flex justify-center gap-20'>
@@ -96,7 +98,7 @@ function Service() {
                                     {[...comment, ...comment].map((work, i) => (
                                         <div className='w-20 h-20 relative'>
                                             <img key={i} src={work.image} className='w-20 h-20 rounded-full' alt="" />
-                                            <div  className={`${i === (indexCom + 2) && 'hidden'} w-20 h-20 absolute rounded-full top-0 z-20 bg-[rgba(253,124,18,0.54)] backdrop-blur transition-all duration-700`}></div>
+                                            <div className={`${i === (indexCom + 2) && 'hidden'} w-20 h-20 absolute rounded-full top-0 z-20 bg-[rgba(253,124,18,0.54)] backdrop-blur transition-all duration-700`}></div>
                                         </div>
                                     ))}
                                 </div>

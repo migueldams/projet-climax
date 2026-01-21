@@ -1,6 +1,6 @@
-import  { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { ArrowRight } from 'lucide-react'
-import { AboutI, comment} from '@/constant'
+import { AboutI, comment } from '@/constant'
 import commercial from '@/assets/Commercial.jpeg'
 import { MdHomeRepairService } from 'react-icons/md'
 import globe from '@/assets/globe.jpg'
@@ -26,7 +26,7 @@ function AboutCom() {
         if (slideRef.current) {
             slideRef.current.style.transform = `translateX(-${indexCom * 15}%)`;
         }
-       
+
     }, [indexCom]);
 
     return (
@@ -34,22 +34,34 @@ function AboutCom() {
             <div className='px-10 md:px-0 xl:w-2/3 gl:w-4/5 w-full space-y-20'>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
                     <div className='w-full space-y-4'>
-                        <p className='text-orange-400'>Erdunt Is The Industry Leaders</p>
-                        <div className='font-bold text-2xl'>Our Factory Produces
-                            Reliable, Efficient, Safe
-                            & Sustainable Products.
+                        <p className='text-orange-400'>Climax-Tech, leader en froid et climatisation</p>
+                        <div className='font-bold text-2xl'>
+                            Nous fournissons des solutions fiables, performantes,
+                            sécurisées et durables pour tous vos besoins en froid et climatisation.
                         </div>
                     </div>
                     <div className='w-full space-y-4'>
-                        <p className='text-sm'>Incididunt ut labore et dolore magna aliqua. At enim ipsum dnim veniam, quis nos trud exercitation dolor ullamco laboris nisi ut aliquip ex ea comaody consequat duisaute irure dolor in reprehenderit in voluptate velit.</p>
+                        <p className='text-sm'>
+                            De l’installation à la maintenance, nous garantissons un service professionnel, rapide et conforme aux normes pour un confort optimal.
+                        </p>
                         <ul className='font-semibold flex flex-col gap-2'>
-                            <p className='flex items-center gap-4'><ArrowRight size={8} className='p-2 bg-orange-400 text-white rounded-full' /> Leading industrial solutions with best machinery</p>
-                            <p className='flex items-center gap-4'><ArrowRight size={8} className='p-2 bg-orange-400 text-white rounded-full' />Leading industrial solutions with best machinery</p>
-                            <p className='flex items-center gap-4'><ArrowRight size={8} className='p-2 bg-orange-400 text-white rounded-full' />Leading industrial solutions with best machinery</p>
+                            <p className='flex items-center gap-4'>
+                                <ArrowRight size={8} className='p-2 bg-orange-400 text-white rounded-full' />
+                                Installation et mise en service de systèmes climatiques et frigorifiques
+                            </p>
+                            <p className='flex items-center gap-4'>
+                                <ArrowRight size={8} className='p-2 bg-orange-400 text-white rounded-full' />
+                                Maintenance préventive et dépannage rapide pour garantir durabilité et performance
+                            </p>
+                            <p className='flex items-center gap-4'>
+                                <ArrowRight size={8} className='p-2 bg-orange-400 text-white rounded-full' />
+                                Solutions sur mesure pour particuliers, commerces et industries
+                            </p>
                         </ul>
                     </div>
                 </div>
             </div>
+
             <div className='w-full h-120 shadow-2xl flex flex-col md:grid grid-cols-3 '>
                 {AboutI.map((Ab, i) => (
                     <div key={i} ref={useEbout} className='relative w-full hover:text-white group transition-all duration-500 '>
@@ -63,7 +75,7 @@ function AboutCom() {
                             <div className='space-y-10 font-semibold'>
                                 {Ab.content}
                             </div>
-                            <button className='bg-orange-400 p-4'>READ MORE</button>
+                            <button className='bg-orange-400 p-4 font-semibold'>READ MORE</button>
                         </div>
                     </div>
                 ))}
@@ -75,13 +87,18 @@ function AboutCom() {
                         <div className='bg-orange-400 absolute top-20 -left-8 text-white '><MdHomeRepairService size={80} /></div>
                     </div>
                     <div className='w-full flex flex-col gap-8'>
-                        <p className='text-orange-400 font-semibold'>The Construction Industry</p>
-                        <p className='font-bold text-4xl'>A Next Generation
-                            Construction Company
-                            <b className='text-blue-800'>Engineering Since 2005</b></p>
-                        <p className='text-2xl'>Sharing State-of-the-Art Facilities & Equipments For Building Refine Energy Units.</p>
-                        <p className='text-2xl'>Incididunt ut laboret dolore magna aliqua enim ipsum dnim veniam quis nos trud exercitation dolor ullamco laboris nisi ut aliquip ex ea comaody consequat duis aute irure dolor in reprehenderit voluptate lorem.</p>
-                        <button className='text-2xl text-orange-400 w-30 underline'>Read more</button>
+                        <p className='text-orange-400 font-semibold'>Froid & Climatisation Professionnelle</p>
+                        <p className='font-bold text-4xl'>
+                            Climax-Tech : Solutions Innovantes pour le Confort Thermique
+                            <b className='text-blue-800'> Depuis 2015</b>
+                        </p>
+                        <p className='text-2xl font-semibold'>
+                            Installation, maintenance et dépannage de systèmes de climatisation et de froid fiables et performants.
+                        </p>
+                        <p className='text-xl'>
+                            Nos experts garantissent des interventions rapides et efficaces pour particuliers, commerces et industries, avec un souci constant de qualité et de sécurité.
+                        </p>
+                        <button className='text-xl text-orange-400 w-40 underline'>En savoir plus</button>
                     </div>
                 </div>
             </div>
@@ -91,7 +108,7 @@ function AboutCom() {
                 </div>
                 <div className='relative flex flex-col  w-full items-center z-20 space-y-20' >
                     <div className='w-full text-center'>
-                        <p className='font-bold text-orange-400'>What Erdunt Partners Saying</p>
+                        <p className='font-bold text-orange-400'>Qu'es ce que nos partenaire pense</p>
                         <p className='font-bold text-4xl'>Read Client’s Reviews</p>
                     </div>
                     <div className='w-full flex justify-center gap-20'>

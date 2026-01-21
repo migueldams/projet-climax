@@ -11,46 +11,46 @@ import Repair from '@/assets/Repairman.jpeg'
 
 
 const bannier = [
-    {
-        title: 'Build Quality Projet',
-        content: 'At Build the Quality upload the climatisation',
-        fond: ban1
-    },{
-        title: '',
-        content: '',
-        fond: ban2
-    },{
-        title: '',
-        content: '',
-        fond: ban3
-    },
+  {
+    title: 'Le froid maîtrisé, le confort garanti',
+    content: 'Votre partenaire de confiance en froid et climatisation',
+    fond: ban1
+  }, {
+    title: '',
+    content: '',
+    fond: ban2
+  }, {
+    title: '',
+    content: '',
+    fond: ban3
+  },
 ]
 
-const NavLink =[
-    {
-        Labal:'Home',
-        path:'/',
-        icon: HomeIcon
-    },{
-        Labal:'About',
-        path:'/about',
-        icon: SiAboutdotme
-    },{
-        Labal:'Service',
-        path:'/service',
-        icon: ServerIcon
-    },{
-        Labal:'Contact',
-        path:'/contact',
-        icon: Contact
-    },
+const NavLink = [
+  {
+    Labal: 'Home',
+    path: '/',
+    icon: HomeIcon
+  }, {
+    Labal: 'About',
+    path: '/about',
+    icon: SiAboutdotme
+  }, {
+    Labal: 'Service',
+    path: '/service',
+    icon: ServerIcon
+  }, {
+    Labal: 'Contact',
+    path: '/contact',
+    icon: Contact
+  },
 
 ]
- const socialLinks = [
-    { icon: FaWhatsapp,  label: "whatsapp" },
-    { icon: Instagram,  label: "TikTok" },
-    { icon: Facebook,  label: "Facebook" },
-  ];
+const socialLinks = [
+  { icon: FaWhatsapp, label: "whatsapp" },
+  { icon: Instagram, label: "TikTok" },
+  { icon: Facebook, label: "Facebook" },
+];
 
 const services = [
   {
@@ -71,11 +71,11 @@ const services = [
         </svg>
       );
     },
-    title: "Air Conditioner & Cooling Room Installation",
+    title: "Expertise technique certifiée en froid et climatisation",
     desc: "We design and install reliable air conditioning and cold room systems for homes, offices, and industries — engineered for lasting performance and energy efficiency.",
   },
   {
-    title: "Maintenance of Air Conditioners & Cooling Rooms",
+    title: "Interventions rapides et fiables",
     desc: "Our team ensures your equipment runs smoothly through regular servicing, cleaning, and quick repairs to prevent breakdowns and extend system lifespan.",
     logo() {
       return (
@@ -112,7 +112,7 @@ const services = [
     },
   },
   {
-    title: "7-Day Follow-Up & Support Service",
+    title: "Service client professionnel et personnalisé",
     desc: "We stay connected even after installation — monitoring your systems and providing assistance 7 days a week to guarantee comfort and peace of mind.",
     logo() {
       return (
@@ -149,7 +149,7 @@ const services = [
     },
   },
   {
-    title: "Supply of Cooling Equipment & Spare Parts",
+    title: "Solutions durables et économes en énergie",
     desc: "We provide top-quality air conditioners, refrigeration units, and genuine spare parts, with professional advice to match the right product to your needs.",
     logo() {
       return (
@@ -190,59 +190,132 @@ const services = [
 const serviceTabs = [
   {
     id: 1,
-    label: "Air conditioning installation",
+    label: "Installation de climatisation",
     image: 'https://mehedi.asiandevelopers.com/demo/erdunt/assets/images/services/service-v1-1.jpg',
     title:
-      "Professional Air Conditioning Installation for Perfect Home Comfort",
+      "Installation professionnelle de climatisation pour un confort optimal",
     content:
-      "Upgrade your home or business with a modern, energy-efficient AC system installed by certified experts!",
+      "Installation de systèmes de climatisation performants et économes en énergie pour maisons, bureaux et espaces commerciaux.",
   },
   {
     id: 2,
-    label: "Air conditioning Maintenance",
+    label: "Maintenance de climatisation",
     image: 'https://mehedi.asiandevelopers.com/demo/erdunt/assets/images/services/service-v1-2.jpg',
-    title: "Air Conditioning Care & Maintenance",
+    title: "Entretien et maintenance de climatisation",
     content:
-      "Regular servicing to keep your AC running smoothly, reduce breakdowns, and improve cooling efficiency.",
+      "Maintenance préventive et corrective pour assurer le bon fonctionnement, la longévité et l’efficacité de vos climatiseurs.",
   },
   {
     id: 3,
-    label: "Refrigeration install",
+    label: "Installation frigorifique",
     image: 'https://mehedi.asiandevelopers.com/demo/erdunt/assets/images/services/service-v1-3.jpg',
-    title: "Professional Refrigeration Installation",
+    title: "Installation de systèmes de froid professionnel",
     content:
-      "Expert setup of cold rooms and refrigeration systems built for reliability and long-term performance.",
+      "Mise en place de chambres froides et équipements frigorifiques fiables, adaptés aux besoins commerciaux et industriels.",
   },
   {
     id: 4,
-    label: "Refrigeraition Maintenance",
+    label: "Maintenance frigorifique",
     image: 'https://mehedi.asiandevelopers.com/demo/erdunt/assets/images/services/service-v1-4.jpg',
-    title: "Advanced Refrigeration Maintenance",
+    title: "Maintenance avancée des installations frigorifiques",
     content:
-      "Skilled diagnostics and routine checks to keep your cooling units efficient, safe, and fully operational.",
+      "Diagnostic, entretien et dépannage pour garantir la performance, la sécurité et la continuité de vos systèmes de froid.",
   }
 ];
 
-const recentWorks = [
-    {categorie: 'Refrigeraition Maintenance',title:'Advanced Refrigeration Maintenance',content:'Skilled diagnostics and routine checks to keep your cooling units efficient, safe, and fully operational.',date:'30-20-2025',image:'https://mehedi.asiandevelopers.com/demo/erdunt/assets/images/project/project-v1-2.jpg'},
-    {categorie: 'Refrigeraition Maintenance',title:'Advanced Refrigeration Maintenance',content:'Skilled diagnostics and routine checks to keep your cooling units efficient, safe, and fully operational.',date:'30-20-2025',image:'https://mehedi.asiandevelopers.com/demo/erdunt/assets/images/project/project-v1-2.jpg'},
-    {categorie: 'Refrigeraition Maintenance',title:'Advanced Refrigeration Maintenance',content:'Skilled diagnostics and routine checks to keep your cooling units efficient, safe, and fully operational.',date:'30-20-2025',image:'https://mehedi.asiandevelopers.com/demo/erdunt/assets/images/project/project-v1-2.jpg'},
-    {categorie: 'Refrigeraition Maintenance',title:'Advanced Refrigeration Maintenance',content:'Skilled diagnostics and routine checks to keep your cooling units efficient, safe, and fully operational.',date:'30-20-2025',image:'https://mehedi.asiandevelopers.com/demo/erdunt/assets/images/project/project-v1-2.jpg'},
-    {categorie: 'Refrigeraition Maintenance',title:'Advanced Refrigeration Maintenance',content:'Skilled diagnostics and routine checks to keep your cooling units efficient, safe, and fully operational.',date:'30-20-2025',image:'https://mehedi.asiandevelopers.com/demo/erdunt/assets/images/project/project-v1-2.jpg'},
-    {categorie: 'Refrigeraition Maintenance',title:'Advanced Refrigeration Maintenance',content:'Skilled diagnostics and routine checks to keep your cooling units efficient, safe, and fully operational.',date:'30-20-2025',image:'https://mehedi.asiandevelopers.com/demo/erdunt/assets/images/project/project-v1-2.jpg'},
-]
 
-const comment =[
-    {image:"https://industrie.rstheme.com/main/wp-content/uploads/2024/02/t_h_1.jpg",comment:"Excellent service! Quick installation and very professional team. My AC works perfectly.",name:'Peter Hase',poste:'Ceo Californie ,USA'},
-    {image:"https://industrie.rstheme.com/main/wp-content/uploads/2024/02/t_h_2.jpg",comment:"Fast repair and great customer support. They saved my day! Highly recommended.",name:"Lawrence Pater",poste:'housewife ,Bretagne'},
-    {image:"https://industrie.rstheme.com/main/wp-content/uploads/2024/01/team_img_5-414x500.jpg",comment:"Reliable, efficient, and affordable. My refrigeration system has never worked better.",name:"Braley Raws",poste:'Sr. ingineer , USA'},
-]
+const recentWorks = [
+  {
+    categorie: 'Maintenance frigorifique',
+    title: 'Maintenance avancée de chambre froide',
+    content: 'Diagnostic complet et entretien préventif pour garantir performance, sécurité et continuité de service.',
+    date: '30-12-2025',
+    image: 'https://mehedi.asiandevelopers.com/demo/erdunt/assets/images/project/project-v1-2.jpg'
+  },
+  {
+    categorie: 'Installation de climatisation',
+    title: 'Installation de climatisation commerciale',
+    content: 'Mise en place d’un système de climatisation économe en énergie pour espaces professionnels.',
+    date: '18-12-2025',
+    image: 'https://mehedi.asiandevelopers.com/demo/erdunt/assets/images/project/project-v1-2.jpg'
+  },
+  {
+    categorie: 'Maintenance de climatisation',
+    title: 'Entretien préventif multi-split',
+    content: 'Nettoyage, contrôle et optimisation des performances pour un confort durable.',
+    date: '05-12-2025',
+    image: 'https://mehedi.asiandevelopers.com/demo/erdunt/assets/images/project/project-v1-2.jpg'
+  },
+  {
+    categorie: 'Froid industriel',
+    title: 'Installation de système frigorifique industriel',
+    content: 'Installation fiable et conforme aux normes pour une production maîtrisée.',
+    date: '22-11-2025',
+    image: 'https://mehedi.asiandevelopers.com/demo/erdunt/assets/images/project/project-v1-2.jpg'
+  },
+  {
+    categorie: 'Dépannage urgent',
+    title: 'Intervention rapide sur panne frigorifique',
+    content: 'Dépannage express pour rétablir le froid et limiter les pertes.',
+    date: '10-11-2025',
+    image: 'https://mehedi.asiandevelopers.com/demo/erdunt/assets/images/project/project-v1-2.jpg'
+  },
+  {
+    categorie: 'Audit & optimisation',
+    title: 'Optimisation énergétique des installations',
+    content: 'Analyse et ajustements techniques pour réduire la consommation énergétique.',
+    date: '28-10-2025',
+    image: 'https://mehedi.asiandevelopers.com/demo/erdunt/assets/images/project/project-v1-2.jpg'
+  }
+];
+
+
+const comment = [
+  {
+    image: "https://industrie.rstheme.com/main/wp-content/uploads/2024/02/t_h_1.jpg",
+    comment: "Service impeccable ! Installation rapide et équipe très professionnelle. La climatisation fonctionne parfaitement.",
+    name: 'Jean Mvogo',
+    poste: 'Directeur d’entreprise, Cameroun'
+  },
+  {
+    image: "https://industrie.rstheme.com/main/wp-content/uploads/2024/02/t_h_2.jpg",
+    comment: "Intervention rapide et excellent service client. Le dépannage a été efficace et sans surprise.",
+    name: "Aline Kouam",
+    poste: 'Gérante de commerce, Douala'
+  },
+  {
+    image: "https://industrie.rstheme.com/main/wp-content/uploads/2024/01/team_img_5-414x500.jpg",
+    comment: "Entreprise fiable et compétente. Notre système frigorifique fonctionne désormais de manière optimale.",
+    name: "Patrick Nganou",
+    poste: 'Responsable technique, Yaoundé'
+  },
+];
+
 
 const AboutI = [
-    {title:'Recognized Contractors',content:"Incididunt ut laboret dolore magna aliqua enim ipsum veniam trud exercitation dolor ullamco laboris nisit aliquip ex comaody duis aute irure dolor in reprehenderit.",image:Repair,icon: GiAutoRepair },
-    {title:'Recognized Contractors',content:"Incididunt ut laboret dolore magna aliqua enim ipsum veniam trud exercitation dolor ullamco laboris nisit aliquip ex comaody duis aute irure dolor in reprehenderit.",image:commercial,icon: GiAutoRepair },
-    {title:'Recognized Contractors',content:"Incididunt ut laboret dolore magna aliqua enim ipsum veniam trud exercitation dolor ullamco laboris nisit aliquip ex comaody duis aute irure dolor in reprehenderit.",image:getting,icon: GiAutoRepair },
-]
+  {
+    title: 'Expertise reconnue',
+    content:
+      "Climax-Tech met à votre service une expertise éprouvée en froid et climatisation, avec des interventions conformes aux normes et adaptées à chaque environnement.",
+    image: Repair,
+    icon: GiAutoRepair
+  },
+  {
+    title: 'Solutions professionnelles',
+    content:
+      "Nous proposons des solutions sur mesure pour les particuliers, commerces et industries, garantissant performance, fiabilité et efficacité énergétique.",
+    image: commercial,
+    icon: GiAutoRepair
+  },
+  {
+    title: 'Accompagnement & fiabilité',
+    content:
+      "De l’étude à la maintenance, notre équipe vous accompagne avec réactivité, transparence et un engagement constant pour votre satisfaction.",
+    image: getting,
+    icon: GiAutoRepair
+  },
+];
 
 
-export {bannier,NavLink,socialLinks,services ,serviceTabs,recentWorks ,comment ,AboutI}
+
+export { bannier, NavLink, socialLinks, services, serviceTabs, recentWorks, comment, AboutI }
