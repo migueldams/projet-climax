@@ -9,7 +9,7 @@ const Home = () => {
 
   return (
     <div className='w-screen '>
-      <div>
+      <div className='flex flex-col gap-16'>
          <ScrollAnimation><Bannier /></ScrollAnimation>
          <ScrollAnimation><About /></ScrollAnimation>
          <ScrollAnimation><Service/></ScrollAnimation>

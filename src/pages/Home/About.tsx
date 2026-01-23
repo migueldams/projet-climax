@@ -59,11 +59,11 @@ function About() {
             </div>
             <div className=' gl:w-4/5 grid grid-cols-1 lg:grid-cols-2 w-full space-x-10'>
                 <div className='w-1/2 relative'>
-                    <img className='absolute w-100 h-100 -right-10 lg:-right-20 -top-10 hover:rotate-12 transition-all duration-500 rounded-2xl ' src={ban2} alt="" />
-                    <img className='absolute w-100 h-100 z-10 -right-50 lg:-right-80 hover:-rotate-12 transition-all duration-500 rounded-2xl' src={ban1} alt="" />
+                    <img className='absolute w-100 h-100 -right-10 max-[600px]:-right-5 lg:-right-20 object-cover -top-10 hover:rotate-12 transition-all duration-500 rounded-2xl ' src={ban2} alt="" />
+                    <img className='absolute w-100 h-100 z-10 -right-50 max-[600px]:-right-35 object-cover lg:-right-80 hover:-rotate-12 transition-all duration-500 rounded-2xl' src={ban1} alt="" />
                 </div>
 
-                <div className='w-full lg:w-1/2 mt-100 lg:mt-0 px-10 md:px-0 md:ml-20 space-x-8'>
+                <div className='w-full lg:w-1/2 mt-104 lg:mt-0 px-10 md:px-0 md:ml-20 space-x-8'>
                     <div className='space-x-4'>
                         <p className='text-orange-400'>Climax-Tech, expert du froid et de la climatisation</p>
                         <p className='font-bold text-2xl'>
@@ -74,10 +74,9 @@ function About() {
                         </p>
                     </div>
 
-                    <div className='space-y-4'>
+                    <div className='space-y-4 mt-4'>
                         <div className='flex items-center gap-4'>
-                            <div className='w-20 h-20 rounded-full bg-gray-300'></div>
-                            <div className='space-y-4 w-2/3'>
+                            <div className='space-y-4 w-full py-4 border-t border-gray-300'>
                                 <p className='font-semibold'>Climatisation & Froid commercial</p>
                                 <p>
                                     Solutions performantes pour bureaux, commerces et habitations, garantissant confort thermique et efficacité énergétique.
@@ -86,8 +85,7 @@ function About() {
                         </div>
 
                         <div className='flex items-center gap-4'>
-                            <div className='w-20 h-20 rounded-full bg-gray-300'></div>
-                            <div className='space-y-4 w-2/3'>
+                            <div className='space-y-4 w-full py-4 border-t border-gray-300 border-b '>
                                 <p className='font-semibold'>Maintenance & Dépannage</p>
                                 <p>
                                     Interventions rapides, entretien préventif et assistance technique pour assurer la durabilité et la fiabilité de vos équipements.
@@ -133,7 +131,7 @@ function About() {
                     <div className='w-full xl:w-2/3 grid grid-cols-1 md:grid-cols-2  gap-8 text-white'>
                         {
                             serviceTabs.map((tab, i) => (
-                                <div key={i} className='w-full h-80 space-y-4'>
+                                <div key={i} className='w-full h-full space-y-4'>
                                     <img className='w-full h-50 object-cover' src={tab.image} alt="" />
                                     <p className='font-bold'>{tab.title}</p>
                                     <p>{tab.content}</p>
