@@ -52,7 +52,6 @@ function serviceCom() {
                                     <p className='font-semibold md:hidden lg:flex'>{tab.label} </p>
                                 </div>
                                 <hr />
-                                <button className='text-orange-400 under-line'>GetStarted</button>
                             </div>
                         </div>
                     ))}
@@ -79,8 +78,8 @@ function serviceCom() {
                     </div>
                 </div>
             </div>
-            <div className='xl:w-2/3 gl:w-4/5 w-full grid grid-cols-1 md:grid-cols-2 px-10 md:px-0 items-center gap-4 my-10 py-20 border-t-2 '>
-                <div className='w-full px-10 flex items-center gap-4'>
+            <div className='xl:w-2/3 gl:w-4/5 w-full grid grid-cols-1 md:grid-cols-2 px-10 max-[600px]:px-0 md:px-0 items-center gap-4 my-10 py-20 border-t-2 '>
+                <div className='w-full px-10 max-[600px]:px-2 flex items-center gap-4 border max-[600px]:flex-col'>
                     <MessageCircle size={40} />
                     <div className=''>
                         <p className='font-bold text-2xl'>Abonnez-vous à notre Newsletter</p>

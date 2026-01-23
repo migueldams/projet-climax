@@ -62,12 +62,11 @@ function AboutCom() {
                 </div>
             </div>
 
-            <div className='w-full h-120 shadow-2xl flex flex-col md:grid grid-cols-3 '>
+            <div className='w-full shadow-2xl flex flex-col md:grid md:grid-cols-3 justify-center items-center'>
                 {AboutI.map((Ab, i) => (
-                    <div key={i} ref={useEbout} className='relative w-full hover:text-white group transition-all duration-500 '>
-                        <img className={`${i === 1 ? '' : 'rotate-y-90'} w-full h-120 absolute object-cover transition-all duration-500  group-hover:rotate-y-0 z-1`} src={Ab.image} alt="" />
-                        <div className='absolute w-full h-120 z-10 hidden group-hover:block top-0 bg-[rgba(0,0,0,0.5)] '></div>
-                        <div className='absolute z-20 p-20 space-y-8 '>
+                    <div key={i} ref={useEbout} className='relative w-full hover:text-white max-[600px]:text-white group transition-all duration-500 h-fit border border-gray-300'>
+                        <div className='absolute w-full h-120 z-10 min-[600px]:hidden group-hover:block top-0 bg-[rgba(0,0,0,0.5)] '></div>
+                        <div className='absolute z-20 p-12 space-y-8 h-full w-full flex flex-col justify-center items-center'>
                             <div className='flex gap-4 items-center'>
                                 <Ab.icon size={80} />
                                 <p className='font-bold text-3xl'>{Ab.title} </p>
@@ -75,8 +74,8 @@ function AboutCom() {
                             <div className='space-y-10 font-semibold'>
                                 {Ab.content}
                             </div>
-                            <button className='bg-orange-400 p-4 font-semibold'>READ MORE</button>
                         </div>
+                        <img className={`${i === 1 ? '' : 'min-[600px]:rotate-y-90'} w-full h-120  object-cover transition-all duration-500  group-hover:rotate-y-0 z-1`} src={Ab.image} alt="" />
                     </div>
                 ))}
             </div>
