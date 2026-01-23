@@ -123,7 +123,7 @@ function About() {
                         </div>
 
                         <img
-                            className='absolute hidden lg:flex top-130 left-20 z-40 '
+                            className='absolute hidden lg:flex top-130 left-40 z-40  h-80 w-100'
                             sizes='40'
                             src="https://mehedi.asiandevelopers.com/demo/erdunt/assets/images/shape/factory.png"
                             alt=""
