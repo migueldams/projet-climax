@@ -50,7 +50,7 @@ function Service() {
 
     return (
         <div className=' flex flex-col items-center w-screen  mt-20'>
-            <div className='xl:w-2/3 gl:w-4/5 w-full flex flex-col items-center space-y-20'>
+            <div className='xl:w-2/3 gl:w-4/5 w-full flex flex-col items-center py-20 space-y-20'>
                 <div className='w-2/3 md:w-1/2 text-center'>
                     <p className='font-bold text-orange-400'>Nos réalisations Climax Tech SA</p>
                     <p className='font-bold text-3xl'>Projets récents en froid et climatisation</p>

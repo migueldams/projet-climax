@@ -2,13 +2,17 @@ import { Contact, Facebook, HomeIcon, Instagram, ServerIcon } from "lucide-react
 import { GiAutoRepair } from "react-icons/gi";
 import { FaWhatsapp } from "react-icons/fa";
 import { SiAboutdotme } from "react-icons/si";
-import ban1 from '@/assets/ban1.jpg'
-import ban2 from '@/assets/ban2.jpg'
-import ban3 from '@/assets/ban3.jpg'
+import ban1 from '@/assets/ban2.jpg'
+import ban2 from '@/assets/ban2.jpeg'
+import ban3 from '@/assets/ban4.jpg'
 import commercial from '@/assets/Commercial.jpeg'
 import getting from '@/assets/Getting.jpeg'
 import Repair from '@/assets/Repairman.jpeg'
-
+import climate from '@/assets/climate.jpeg'
+import climate2 from '@/assets/climate2.jpeg'
+import man from '@/assets/man.jpeg'
+import techn from '@/assets/techn.jpeg'
+import climfond from '@/assets/climfond.jpg'
 
 const bannier = [
   {
@@ -191,7 +195,7 @@ const serviceTabs = [
   {
     id: 1,
     label: "Installation de climatisation",
-    image: 'https://mehedi.asiandevelopers.com/demo/erdunt/assets/images/services/service-v1-1.jpg',
+    image: commercial,
     title:
       "Installation professionnelle de climatisation pour un confort optimal",
     content:
@@ -200,7 +204,7 @@ const serviceTabs = [
   {
     id: 2,
     label: "Maintenance de climatisation",
-    image: 'https://mehedi.asiandevelopers.com/demo/erdunt/assets/images/services/service-v1-2.jpg',
+    image: climate,
     title: "Entretien et maintenance de climatisation",
     content:
       "Maintenance préventive et corrective pour assurer le bon fonctionnement, la longévité et l’efficacité de vos climatiseurs.",
@@ -208,7 +212,7 @@ const serviceTabs = [
   {
     id: 3,
     label: "Installation frigorifique",
-    image: 'https://mehedi.asiandevelopers.com/demo/erdunt/assets/images/services/service-v1-3.jpg',
+    image: climate2,
     title: "Installation de systèmes de froid professionnel",
     content:
       "Mise en place de chambres froides et équipements frigorifiques fiables, adaptés aux besoins commerciaux et industriels.",
@@ -216,7 +220,7 @@ const serviceTabs = [
   {
     id: 4,
     label: "Maintenance frigorifique",
-    image: 'https://mehedi.asiandevelopers.com/demo/erdunt/assets/images/services/service-v1-4.jpg',
+    image: man,
     title: "Maintenance avancée des installations frigorifiques",
     content:
       "Diagnostic, entretien et dépannage pour garantir la performance, la sécurité et la continuité de vos systèmes de froid.",
@@ -237,21 +241,21 @@ const recentWorks = [
     title: 'Installation de climatisation commerciale',
     content: 'Mise en place d’un système de climatisation économe en énergie pour espaces professionnels.',
     date: '18-12-2025',
-    image: 'https://mehedi.asiandevelopers.com/demo/erdunt/assets/images/project/project-v1-2.jpg'
+    image: climfond
   },
   {
     categorie: 'Maintenance de climatisation',
     title: 'Entretien préventif multi-split',
     content: 'Nettoyage, contrôle et optimisation des performances pour un confort durable.',
     date: '05-12-2025',
-    image: 'https://mehedi.asiandevelopers.com/demo/erdunt/assets/images/project/project-v1-2.jpg'
+    image: getting
   },
   {
     categorie: 'Froid industriel',
     title: 'Installation de système frigorifique industriel',
     content: 'Installation fiable et conforme aux normes pour une production maîtrisée.',
     date: '22-11-2025',
-    image: 'https://mehedi.asiandevelopers.com/demo/erdunt/assets/images/project/project-v1-2.jpg'
+    image: techn
   },
   {
     categorie: 'Dépannage urgent',

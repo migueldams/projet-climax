@@ -1,8 +1,9 @@
 
 import { ArrowRight } from 'lucide-react'
 import { services, serviceTabs } from '@/constant'
-import ban1 from '@/assets/ban1.jpg'
-import ban2 from '@/assets/ban2.jpg'
+import ban1 from '@/assets/ban2.jpg'
+import ban2 from '@/assets/ban2.jpeg'
+import { Link } from 'react-router-dom'
 
 function About() {
 
@@ -16,13 +17,26 @@ function About() {
                         </div>
                     </div>
                     <div className='w-full space-y-4'>
-                        <p className='text-sm'>Nous plaçons la qualité, la fiabilité et la satisfaction client au cœur de chaque intervention. Nous nous engageons à fournir un service réactif, transparent et respectueux de l’environnement, avec des solutions pensées pour durer.</p>
+                        <p className='text-sm'>
+                            Nous plaçons la qualité, la fiabilité et la satisfaction client au cœur de chaque intervention.
+                            Nos solutions en froid et climatisation sont conçues pour offrir performance, durabilité et efficacité énergétique.
+                        </p>
                         <ul className='font-semibold flex flex-col gap-2'>
-                            <p className='flex items-center gap-4'><ArrowRight size={8} className='p-2 bg-orange-400 text-white rounded-full' /> Leading industrial solutions with best machinery</p>
-                            <p className='flex items-center gap-4'><ArrowRight size={8} className='p-2 bg-orange-400 text-white rounded-full' />Leading industrial solutions with best machinery</p>
-                            <p className='flex items-center gap-4'><ArrowRight size={8} className='p-2 bg-orange-400 text-white rounded-full' />Leading industrial solutions with best machinery</p>
+                            <p className='flex items-center gap-4'>
+                                <ArrowRight size={8} className='p-2 bg-orange-400 text-white rounded-full' />
+                                Solutions de climatisation et de froid performantes et durables
+                            </p>
+                            <p className='flex items-center gap-4'>
+                                <ArrowRight size={8} className='p-2 bg-orange-400 text-white rounded-full' />
+                                Interventions rapides avec équipements et technologies modernes
+                            </p>
+                            <p className='flex items-center gap-4'>
+                                <ArrowRight size={8} className='p-2 bg-orange-400 text-white rounded-full' />
+                                Respect des normes, sécurité et efficacité énergétique
+                            </p>
                         </ul>
                     </div>
+
                 </div>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-8'>
                     {services.map((serv, ind) => (
@@ -103,19 +117,20 @@ function About() {
                                 Innovation & expertise
                                 au service de votre confort
                             </p>
-                            <button className='w-full flex items-center justify-center font-bold h-20 p-4 border-2 border-white'>
+                            <Link to='/contact#form' className='w-full flex items-center justify-center font-bold h-20 p-4 border-2 border-white cursor-pointer'>
                                 Demarrer un projet
-                            </button>
+                            </Link>
                         </div>
 
                         <img
-                            className='absolute hidden lg:flex top-130 left-20 z-40'
+                            className='absolute hidden lg:flex top-130 left-20 z-40 '
+                            sizes='40'
                             src="https://mehedi.asiandevelopers.com/demo/erdunt/assets/images/shape/factory.png"
                             alt=""
                         />
                     </div>
 
-                    <div className='w-full xl:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8 text-white'>
+                    <div className='w-full xl:w-2/3 grid grid-cols-1 md:grid-cols-2  gap-8 text-white'>
                         {
                             serviceTabs.map((tab, i) => (
                                 <div key={i} className='w-full h-80 space-y-4'>

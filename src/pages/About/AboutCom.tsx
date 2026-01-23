@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
 import { ArrowRight } from 'lucide-react'
 import { AboutI, comment } from '@/constant'
-import commercial from '@/assets/Commercial.jpeg'
 import { MdHomeRepairService } from 'react-icons/md'
 import globe from '@/assets/globe.jpg'
+import climfond from '@/assets/climfond.jpg'
 
 function AboutCom() {
 
@@ -83,7 +83,7 @@ function AboutCom() {
             <div className='xl:w-2/3 gl:w-4/5 w-full space-y-20 px-10 md:px-0'>
                 <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-10'>
                     <div className='w-full relative'>
-                        <img className="w-full h-120 object-cover" src={commercial} alt="" />
+                        <img className="w-full h-120 object-cover" src={climfond} alt="" />
                         <div className='bg-orange-400 absolute top-20 -left-8 text-white '><MdHomeRepairService size={80} /></div>
                     </div>
                     <div className='w-full flex flex-col gap-8'>

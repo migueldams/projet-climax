@@ -23,7 +23,7 @@ function ContactCom() {
                     </div>
                 </div>
 
-                <div className='w-full shadow-2xl h-200 p-10 '>
+                <div id="form" className='w-full shadow-2xl h-200 p-10 '>
                     <form className="flex flex-col gap-8 h-full ">
                         <input type="text" className='w-full h-10 border px-5 border-gray-500 ' placeholder='Your Name..' />
                         <div className='grid grid-cols-2'>
